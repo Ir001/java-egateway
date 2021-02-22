@@ -16,13 +16,13 @@
             <Font name="Calibri" size="36.0" />
          </font>
       </Text>
-      <TextField fx:id="email" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="320.0" layoutY="192.0" prefHeight="40.0" prefWidth="300.0" promptText="Email address" scaleShape="false" />
+      <TextField fx:id="txtemail" cacheShape="false" centerShape="false" layoutX="320.0" layoutY="192.0" prefHeight="40.0" prefWidth="300.0" promptText="Email address" scaleShape="false" />
       <Text fill="#3b82f6" layoutX="320.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="235.1328125">
          <font>
             <Font name="Calibri" size="36.0" />
          </font>
       </Text>
-      <PasswordField fx:id="password" layoutX="320.0" layoutY="240.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" />
+      <PasswordField fx:id="txtpassword" cacheShape="false" centerShape="false" layoutX="320.0" layoutY="240.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" scaleShape="false" />
       <Button id="btn-login" fx:id="btnLogin" layoutX="514.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#actionLogin" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: #3B82F6;" text="Login" textFill="WHITE" />
       <ImageView fitHeight="311.0" fitWidth="284.0" layoutX="20.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
          <image>
