@@ -1,19 +1,23 @@
 package App;
 
+//import App.Controller.LoginController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/Resources/Layout/login.fxml"));
-        System.out.println(root);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Resources/Layout/login.fxml"));
+        Parent root = loader.load();
         primaryStage.setTitle("EGateway - Login");
         primaryStage.setScene(new Scene(root, 640, 480));
+        primaryStage.setResizable(false);
+        primaryStage.getIcons().add(new Image(this.getClass().getResource("/Resources/img/trusur.png").toString()));
         primaryStage.show();
     }
 

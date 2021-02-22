@@ -3,25 +3,31 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controller.LoginController">
    <children>
-      <Text layoutX="20.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Gateway" wrappingWidth="235.1328125">
+      <Text fill="#3b82f6" layoutX="20.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-Gateway" wrappingWidth="235.1328125">
          <font>
             <Font name="Calibri" size="36.0" />
          </font>
       </Text>
-      <TextField layoutX="320.0" layoutY="192.0" prefHeight="40.0" prefWidth="300.0" promptText="Email address" />
-      <Text layoutX="320.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="235.1328125">
+      <TextField fx:id="email" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="320.0" layoutY="192.0" prefHeight="40.0" prefWidth="300.0" promptText="Email address" scaleShape="false" />
+      <Text fill="#3b82f6" layoutX="320.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="235.1328125">
          <font>
             <Font name="Calibri" size="36.0" />
          </font>
       </Text>
-      <PasswordField layoutX="320.0" layoutY="240.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" />
-      <Button id="btn-login" layoutX="514.0" layoutY="292.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="106.0" text="Login" />
+      <PasswordField fx:id="password" layoutX="320.0" layoutY="240.0" prefHeight="40.0" prefWidth="300.0" promptText="Password" />
+      <Button id="btn-login" fx:id="btnLogin" layoutX="514.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#actionLogin" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: #3B82F6;" text="Login" textFill="WHITE" />
+      <ImageView fitHeight="311.0" fitWidth="284.0" layoutX="20.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/trusur_hd.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

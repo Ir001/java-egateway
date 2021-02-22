@@ -3,4 +3,5 @@ module Egateway {
     requires javafx.controls;
 
     opens App;
+    opens App.Controller to javafx.fxml;
 }
