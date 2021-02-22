@@ -1,1 +1,1 @@
-![Login](https://github.com/Ir001/java-egateway/blob/master/screenshot.png)
+![Login](https://github.com/Ir001/java-egateway/blob/master/src/Resources/img/screenshot.png)
